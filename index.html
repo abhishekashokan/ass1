@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekly Timetable</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: orange;
+        }
+        td {
+            background-color: rgb(252, 220, 228);
+        }
+        h2 {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SAMPLE WEBPAGE</h1>
+
+
+    <table>
+        <tr>
+            <th>Tags</th>
+            <th>About</th>
+            <th>Example</th>
+            
+        </tr>
+        <tr>
+            <tr>
+                
+                <td>a</td>
+                <td>an element that creates a hyperlink to a URL, such as a web page, email address, or file.</td>
+                <td><a href="https://www.w3schools.com">Link</a></td>
+            </tr>
+            <tr>
+                <td>Relative Path</td>
+                <td>A relative file path points to a file relative to the current page.</td>
+                <td><a href="/about.html">Relative</a></td>
+            </tr>
+            <tr>
+                <td>Absolute Path</td>
+                <td>An absolute file path is the full URL to a file:</td>
+                <td><a href="https://www.w3schools.com">Visit W3Schools.com!</a></td>
+            </tr>
+            <tr>
+                <td>img</td>
+                <td>used to embed an image on a web page.</td>
+                <td><img src="new.jpeg" alt="picture" width="200" height="200"></td>
+            </tr>
+            <tr>
+                <td>br</td>
+                <td> br tag inserts a single line break.</td>
+                <td> Line to <br> next line</td>
+            </tr>
+            <tr>
+                <td>video</td>
+                <td>used to embed video content in a document, such as a movie clip or other video streams.</td>
+                <td><video width="200" height="200" controls>
+                <source src="movie.mp4" type="video/mp4">
+                </video></td>
+            </tr>
+            <tr>
+                <td>iframe</td>
+                <td>HTML tag that loads another HTML page within the current page</td>
+                <td><iframe width="200" height="200" src="https://www.youtube.com/embed/MDLn5-zSQQI?si=TkP-c_KgD6tOG8zz"
+                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                      gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe></td>
+            </tr>
+
+            <tr>
+                <td>mark</td>
+                <td>used for highlighting text. </td>
+                <td><mark>Highlighted Text</mark></td>
+            </tr>
+            
+            <tr>
+                <td>audio</td>
+                <td>used for embedding audio content </td>
+                <td><audio controls>
+                    <source src="/Death Grips - Get Got.mp3" type="audio/mpeg">
+                  </audio>
+                  </td>
+            </tr>
+    </table>
+
+
+    <title>Student Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: rgb(189, 189, 242);
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        input[type="text"], input[type="number"], input[type="date"] {
+            margin-bottom: 15px;
+            padding: 5px;
+            width: 200px;
+        }
+        input[type="submit"] {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Personal Information Form</h2>
+    <form onsubmit=handleSubmit(even)>
+    <fieldset>  
+      <legend>Login</legend>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Enter First Name" required=""><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter Last Name" required=""><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter Age" required=""><br>
+
+        <label for="joindate">Join Date:</label>
+        <input type="date" id="joindate" name="joindate" required=""><br>
+        
+        <label for="gender">Select your gender</label><br>
+        <input type="radio" name="gender" value="male" required=""> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        
+        <label for="fun">Range</label><br>
+        <input type="range" id="fun" name="fun" value="0" min="0" max="50" 
+        oninput="this.form.out.value = this.value"/>
+       
+        <input type="number" min="0" max="50" name="change_input" value="0"
+        oninput="this.form.out.value = this.value"/><br>
+        
+        <label for="fav">Select your food:</label>
+        <select>
+          <option>
+            veg
+          </option>
+          <option>
+            Non-veg
+          </option>
+          <br>
+           <button>Signup</button>
+          <input type="button" onclick="alert('Clicked Button')" value="Login"/>
+          
+          
+        <br>
+        <input type="submit" onClick="alert('fill the form')"/>
+        </fieldset>
+    </form>
+    
+
+    <table>
+        <caption>Table</caption>
+         <style>
+           table, th, td {
+             border: 1px solid black;
+             border-collapse: collapse;
+           }
+           th{
+             background-color: burlywood;
+           }
+           </style>
+           
+     <tr>
+         <th>first name</th>
+         <th>second name</th>
+         <th>age</th>
+         <th>place</th>
+     </tr>
+   <tr>
+     <td>alan</td>
+     <td>mathew</td>
+     <td>14</td>
+     <td>mangalore</td>
+ </tr>
+ <tr>
+     <td>ajay</td>
+     <td>kumar</td>
+     <td>21</td>
+     <td>bangalore</td>
+ </tr>
+ <tr>
+     <td>Mani</td>
+     <td>Salam</td>
+     <td>25</td>
+     <td>mangalore</td>
+ </tr>
+ <tr>
+     <td>abin</td>
+     <td>thomas</td>
+     <td>20</td>
+     <td>bangalore</td>
+ </tr>
+ <tr>
+     <td>abhay</td>
+     <td>krish</td>
+     <td>17</td>
+     <td>mangalore</td>
+ </tr>
+ <tr>
+     <td>Prakash</td>
+     <td>Kumar</td>
+     <td>24</td> 
+     <td>bangalore</td>
+ </tr>
+</table>
+</body>
+</html>
